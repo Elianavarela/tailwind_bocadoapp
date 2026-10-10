@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOCADOAPP</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dorado: "#f5aa00"
+                    },
+                    fontFamily: {
+                        sans: ["Arial", "Helvetica", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="m-0 bg-[#080808] text-white font-sans overflow-x-hidden">
+
+    <!-- INICIO -->
+    <main class="
+        min-h-[75vh]
+        flex items-center justify-between
+        pt-[35px] px-[7%] pb-[70px]
+        max-[1400px]:px-[6%]
+        max-[1000px]:min-h-0
+        max-[1000px]:flex-col
+        max-[1000px]:justify-center
+        max-[1000px]:px-[5%]
+        max-[1000px]:pt-[40px]
+        max-[1000px]:pb-[110px]
+        max-[1000px]:text-center
+        max-[600px]:px-[20px]
+        max-[600px]:pt-[25px]
+        max-[600px]:pb-[90px]
+        max-[400px]:px-[15px]
+        max-[400px]:pt-[20px]
+        max-[400px]:pb-[80px]
+        bg-[linear-gradient(200deg,rgba(216,235,182,0.399),rgba(0,0,0,0.65),rgba(0,0,0,0.25)),url('/img/fondo1.png')]
+        bg-cover bg-center bg-no-repeat
+    ">
+
+        <!-- LADO IZQUIERDO -->
+        <section class="
+            w-[55%] mb-[30px]
+            max-[1000px]:w-full
+            max-[1000px]:mb-0
+        ">
+
+            <h1 class="
+                text-[55px] font-semibold tracking-[2px]
+                max-[1400px]:text-[50px]
+                max-[1000px]:text-[48px]
+                max-[600px]:text-[38px]
+                max-[600px]:tracking-[1px]
+                max-[400px]:text-[32px]
+            ">
+                BOCADO<span class="text-dorado">APP</span>
+            </h1>
+
+            <!-- LINEA DORADA -->
+            <div class="
+                w-[330px] h-[2px]
+                mt-[10px] mb-[18px]
+                bg-gradient-to-r from-dorado to-transparent
+                max-[1000px]:w-[300px]
+                max-[1000px]:mx-auto
+                max-[600px]:w-[220px]
+            "></div>
+
+            <h3 class="
+                text-[20px] font-normal
+                tracking-[3px] mb-[20px]
+                max-[1400px]:text-[18px]
+                max-[1000px]:text-[19px]
+                max-[1000px]:tracking-[2px]
+                max-[600px]:text-[16px]
+                max-[600px]:leading-[1.5]
+                max-[600px]:mb-[18px]
+                max-[400px]:text-[14px]
+            ">
+                TU RESTAURANTE, MÁS SIMPLE.
+            </h3>
+
+            <p class="
+                max-w-[500px]
+                text-[16px] leading-[1.5]
+                text-[#e2e2e2] mb-[30px]
+                max-[1400px]:text-[15px]
+                max-[1000px]:max-w-[600px]
+                max-[1000px]:mx-auto
+                max-[1000px]:text-[16px]
+                max-[600px]:max-w-full
+                max-[600px]:text-[14px]
+                max-[600px]:mb-[28px]
+                max-[400px]:text-[13px]
+            ">
+                La plataforma todo en uno para gestionar tu
+                restaurante de forma fácil, rápida y eficiente.
+            </p>
+
+            <!-- FUNCIONES -->
+            <div class="
+                flex gap-[30px] mb-[30px]
+                max-[1400px]:gap-[25px]
+                max-[1000px]:grid
+                max-[1000px]:grid-cols-[repeat(2,150px)]
+                max-[1000px]:justify-center
+                max-[1000px]:gap-[25px]
+                max-[600px]:grid-cols-2
+                max-[600px]:gap-[18px]
+                max-[400px]:gap-[10px]
+            ">
+
+                <!-- PEDIDOS -->
+                <div class="text-center w-[110px] max-[1000px]:w-full">
+                    <div class="
+                        w-[60px] h-[60px]
+                        flex items-center justify-center
+                        mx-auto mb-[10px]
+                        border border-dorado
+                        rounded-[14px]
+                        text-dorado text-[25px]
+                        bg-gradient-to-l
+                        from-[#e8ab1d7c] to-transparent
+                        max-[600px]:w-[55px]
+                        max-[600px]:h-[55px]
+                        max-[600px]:text-[23px]
+                        max-[400px]:w-[50px]
+                        max-[400px]:h-[50px]
+                        max-[400px]:text-[20px]
+                    ">🍽</div>
+                    <p class="
+                        text-[13px] font-bold leading-[1.4]
+                        max-[600px]:text-[12px]
+                        max-[400px]:text-[11px]
+                    ">
+                        Pedidos<br>
+                        <span class="font-normal text-[#dddddd]">
+                            instantáneos
+                        </span>
+                    </p>
+                </div>
+
+                <!-- REPORTES -->
+                <div class="text-center w-[110px] max-[1000px]:w-full">
+                    <div class="
+                        w-[60px] h-[60px]
+                        flex items-center justify-center
+                        mx-auto mb-[10px]
+                        border border-dorado rounded-[14px]
+                        text-dorado text-[25px]
+                        bg-gradient-to-l
+                        from-[#e8ab1d7c] to-transparent
+                        max-[600px]:w-[55px]
+                        max-[600px]:h-[55px]
+                        max-[600px]:text-[23px]
+                        max-[400px]:w-[50px]
+                        max-[400px]:h-[50px]
+                        max-[400px]:text-[20px]
+                    ">📈</div>
+                    <p class="
+                        text-[13px] font-bold leading-[1.4]
+                        max-[600px]:text-[12px]
+                        max-[400px]:text-[11px]
+                    ">
+                        Reportes en<br>
+                        <span class="font-normal text-[#dddddd]">
+                            tiempo real
+                        </span>
+                    </p>
+                </div>
+
+                <!-- INVENTARIO -->
+                <div class="text-center w-[110px] max-[1000px]:w-full">
+                    <div class="
+                        w-[60px] h-[60px]
+                        flex items-center justify-center
+                        mx-auto mb-[10px]
+                        border border-dorado rounded-[14px]
+                        text-dorado text-[25px]
+                        bg-gradient-to-l
+                        from-[#e8ab1d7c] to-transparent
+                        max-[600px]:w-[55px]
+                        max-[600px]:h-[55px]
+                        max-[600px]:text-[23px]
+                        max-[400px]:w-[50px]
+                        max-[400px]:h-[50px]
+                        max-[400px]:text-[20px]
+                    ">📦</div>
+                    <p class="
+                        text-[13px] font-bold leading-[1.4]
+                        max-[600px]:text-[12px]
+                        max-[400px]:text-[11px]
+                    ">
+                        Inventario<br>
+                        <span class="font-normal text-[#dddddd]">
+                            inteligente
+                        </span>
+                    </p>
+                </div>
+
+                <!-- CONTROL -->
+                <div class="text-center w-[110px] max-[1000px]:w-full">
+                    <div class="
+                        w-[60px] h-[60px]
+                        flex items-center justify-center
+                        mx-auto mb-[10px]
+                        border border-dorado rounded-[14px]
+                        text-dorado text-[25px]
+                        bg-gradient-to-l
+                        from-[#e8ab1d7c] to-transparent
+                        max-[600px]:w-[55px]
+                        max-[600px]:h-[55px]
+                        max-[600px]:text-[23px]
+                        max-[400px]:w-[50px]
+                        max-[400px]:h-[50px]
+                        max-[400px]:text-[20px]
+                    ">👥</div>
+                    <p class="
+                        text-[13px] font-bold leading-[1.4]
+                        max-[600px]:text-[12px]
+                        max-[400px]:text-[11px]
+                    ">
+                        Control total<br>
+                        <span class="font-normal text-[#dddddd]">
+                            de tu negocio
+                        </span>
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- CONTENEDOR DE BOTONES (REGISTRO E INICIO DE SESIÓN) -->
+            <div class="flex flex-wrap gap-4">
+                <!-- Botón para ir a Registro -->
+                <button
+                    id="btnRegistro"
+                    type="button"
+                    class="
+                        group
+                        border border-dorado
+                        bg-black/70
+                        text-white
+                        px-[20px] py-[11px]
+                        rounded-[12px]
+                        text-[15px]
+                        cursor-pointer
+                        transition-all duration-300
+                        hover:bg-dorado
+                        hover:text-black
+                        hover:-translate-y-[3px]
+                        hover:shadow-[0_0_20px_rgba(245,170,0,0.5)]
+                        max-[600px]:text-[14px]
+                    "
+                >
+                    <span class="text-dorado mr-[10px] group-hover:text-black">▶</span>
+                    Registrarse
+                </button>
+
+                <!-- Botón para ir a Inicio de Sesión -->
+                <button
+                    id="btnInicioSesion"
+                    type="button"
+                    class="
+                        group
+                        border border-dorado
+                        bg-dorado
+                        text-black
+                        px-[20px] py-[11px]
+                        rounded-[12px]
+                        text-[15px]
+                        font-bold
+                        cursor-pointer
+                        transition-all duration-300
+                        hover:bg-black
+                        hover:text-white
+                        hover:-translate-y-[3px]
+                        hover:shadow-[0_0_20px_rgba(245,170,0,0.5)]
+                        max-[600px]:text-[14px]
+                    "
+                >
+                    Iniciar Sesión
+                </button>
+            </div>
+
+        </section>
+
+        <!-- PARTE DERECHA -->
+        <section class="
+            w-[42%] bg-transparent
+            flex items-center justify-center
+            max-[1000px]:w-full
+            max-[1000px]:mt-[45px]
+            max-[600px]:mt-[35px]
+        ">
+            <img
+                src="/img/celular.png"
+                alt="Aplicación BocadoAPP"
+                class="
+                    w-[380px] max-w-full
+                    transition-transform duration-[400ms]
+                    hover:-translate-y-[20px]
+                    max-[1400px]:w-[340px]
+                    max-[1000px]:w-[330px]
+                    max-[600px]:w-[270px]
+                    max-[600px]:max-w-[85%]
+                    max-[400px]:w-[230px]
+                "
+            >
+        </section>
+
+    </main>
+
+    <!-- BENEFICIOS -->
+    <section
+        id="beneficios"
+        class="
+            relative
+            w-[90%] mx-auto
+            -mt-[55px] mb-[40px]
+            grid grid-cols-5
+            bg-[linear-gradient(145deg,#141414,#090909)]
+            border border-[#3d3d3d]
+            rounded-[22px]
+            shadow-[0_15px_40px_rgba(0,0,0,0.8)]
+            overflow-hidden
+            max-[1400px]:w-[92%]
+            max-[1000px]:w-[90%]
+            max-[1000px]:-mt-[65px]
+            max-[1000px]:grid-cols-2
+            max-[600px]:w-[92%]
+            max-[600px]:-mt-[45px]
+            max-[600px]:mb-[30px]
+            max-[600px]:grid-cols-1
+            max-[600px]:rounded-[15px]
+            max-[400px]:w-[94%]
+        "
+    >
+
+        <!-- AHORRA TIEMPO -->
+        <div class="
+            text-center px-[18px] py-[22px]
+            min-h-[180px]
+            border-r border-[#292929]
+            flex flex-col justify-center
+            transition-all duration-300
+            hover:bg-[linear-gradient(200deg,#e8ab1db5,#161615eb,transparent)]
+            hover:-translate-y-[5px]
+            max-[1400px]:px-[14px]
+            max-[1400px]:py-[20px]
+            max-[1400px]:min-h-[170px]
+            max-[1000px]:min-h-[160px]
+            max-[1000px]:border-b
+            max-[600px]:min-h-0
+            max-[600px]:px-[18px]
+            max-[600px]:py-[22px]
+            max-[600px]:border-r-0
+        ">
+            <div class="text-[32px] mb-[12px] max-[1400px]:text-[30px]">⏱</div>
+            <h3 class="text-[#f5b533] text-[16px] leading-[1.3] mb-[12px] max-[1400px]:text-[15px]">Ahorra tiempo</h3>
+            <p class="text-[#dddddd] text-[13px] leading-[1.5] max-[1400px]:text-[12px]">
+                Automatiza procesos y dedícate a lo que realmente importa.
+            </p>
+        </div>
+
+        <!-- VENDE MAS -->
+        <div class="
+            text-center px-[18px] py-[22px]
+            min-h-[180px]
+            border-r border-[#292929]
+            flex flex-col justify-center
+            transition-all duration-300
+            hover:bg-[linear-gradient(200deg,#e8ab1db5,#161615eb,transparent)]
+            hover:-translate-y-[5px]
+            max-[1400px]:px-[14px]
+            max-[1400px]:py-[20px]
+            max-[1400px]:min-h-[170px]
+            max-[1000px]:min-h-[160px]
+            max-[1000px]:border-r-0
+            max-[1000px]:border-b
+            max-[600px]:min-h-0
+            max-[600px]:px-[18px]
+            max-[600px]:py-[22px]
+        ">
+            <div class="text-[32px] mb-[12px] max-[1400px]:text-[30px]">📈</div>
+            <h3 class="text-[#f5b533] text-[16px] leading-[1.3] mb-[12px] max-[1400px]:text-[15px]">Vende más</h3>
+            <p class="text-[#dddddd] text-[13px] leading-[1.5] max-[1400px]:text-[12px]">
+                Optimiza tus ventas y mejora la experiencia de tus clientes.
+            </p>
+        </div>
+
+        <!-- SEGURIDAD -->
+        <div class="
+            text-center px-[18px] py-[22px]
+            min-h-[180px]
+            border-r border-[#292929]
+            flex flex-col justify-center
+            transition-all duration-300
+            hover:bg-[linear-gradient(200deg,#e8ab1db5,#161615eb,transparent)]
+            hover:-translate-y-[5px]
+            max-[1400px]:px-[14px]
+            max-[1400px]:py-[20px]
+            max-[1400px]:min-h-[170px]
+            max-[1000px]:min-h-[160px]
+            max-[1000px]:border-b
+            max-[600px]:min-h-0
+            max-[600px]:px-[18px]
+            max-[600px]:py-[22px]
+            max-[600px]:border-r-0
+        ">
+            <div class="text-[32px] mb-[12px] max-[1400px]:text-[30px]">🛡</div>
+            <h3 class="text-[#f5b533] text-[16px] leading-[1.3] mb-[12px] max-[1400px]:text-[15px]">Todo seguro</h3>
+            <p class="text-[#dddddd] text-[13px] leading-[1.5] max-[1400px]:text-[12px]">
+                Tu información y la de tus clientes siempre protegida.
+            </p>
+        </div>
+
+        <!-- ACCESO -->
+        <div class="
+            text-center px-[18px] py-[22px]
+            min-h-[180px]
+            border-r border-[#292929]
+            flex flex-col justify-center
+            transition-all duration-300
+            hover:bg-[linear-gradient(200deg,#e8ab1db5,#161615eb,transparent)]
+            hover:-translate-y-[5px]
+            max-[1400px]:px-[14px]
+            max-[1400px]:py-[20px]
+            max-[1400px]:min-h-[170px]
+            max-[1000px]:min-h-[160px]
+            max-[1000px]:border-r-0
+            max-[1000px]:border-b
+            max-[600px]:min-h-0
+            max-[600px]:px-[18px]
+            max-[600px]:py-[22px]
+        ">
+            <div class="text-[32px] mb-[12px] max-[1400px]:text-[30px]">☁</div>
+            <h3 class="text-[#f5b533] text-[16px] leading-[1.3] mb-[12px] max-[1400px]:text-[15px]">Accede desde<br>cualquier lugar</h3>
+            <p class="text-[#dddddd] text-[13px] leading-[1.5] max-[1400px]:text-[12px]">
+                Administra tu restaurante desde el celular, tablet o PC.
+            </p>
+        </div>
+
+        <!-- SOPORTE -->
+        <div class="
+            text-center px-[18px] py-[22px]
+            min-h-[180px]
+            flex flex-col justify-center
+            transition-all duration-300
+            hover:bg-[linear-gradient(200deg,#e8ab1db5,#161615eb,transparent)]
+            hover:-translate-y-[5px]
+            max-[1400px]:px-[14px]
+            max-[1400px]:py-[20px]
+            max-[1400px]:min-h-[170px]
+            max-[1000px]:min-h-[160px]
+            max-[600px]:min-h-0
+            max-[600px]:px-[18px]
+            max-[600px]:py-[22px]
+        ">
+            <div class="text-[32px] mb-[12px] max-[1400px]:text-[30px]">🎧</div>
+            <h3 class="text-[#f5b533] text-[16px] leading-[1.3] mb-[12px] max-[1400px]:text-[15px]">Soporte siempre<br>contigo</h3>
+            <p class="text-[#dddddd] text-[13px] leading-[1.5] max-[1400px]:text-[12px]">
+                Estamos para ayudarte cuando lo necesites.
+            </p>
+        </div>
+
+    </section>
+    
+    <!-- SCRIPTS DE REDIRECCIÓN -->
+    <script>
+        // Redirige al registro
+        document.getElementById('btnRegistro').addEventListener('click', () => {
+            window.location.href = 'registro/registro.html';
+        });
+
+        // Redirige al inicio de sesión
+        document.getElementById('btnInicioSesion').addEventListener('click', () => {
+            window.location.href = 'inicio_sesion/inicio.html';
+        });
+    </script>
+
+</body>
+</html>

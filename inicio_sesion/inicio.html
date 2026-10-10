@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>BOCADOAPP</title>
+</head>
+
+<body class="min-h-screen bg-[linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.45)),url('/img/fondo.jpeg')] bg-cover bg-center bg-no-repeat flex justify-center items-center font-sans p-4 sm:p-5 md:p-[20px] max-[500px]:items-start max-[500px]:pt-[15px]">
+
+    <div class="login w-full max-w-[350px] sm:max-w-[420px] md:max-w-[460px] lg:max-w-[600px] py-[20px] px-[15px] sm:px-[35px] lg:py-[35px] lg:px-[60px] text-center text-white bg-[rgba(15,15,15,0.78)] backdrop-blur-[12px] border border-[rgba(255,255,255,0.25)] rounded-[20px] sm:rounded-[24px] lg:rounded-[30px] shadow-[0_20px_50px_rgba(0,0,0,0.60)]">
+
+        <!-- Logo -->
+        <div class="logo text-[38px] sm:text-[45px] lg:text-[60px] text-[#e9b63f] mb-[2px] sm:mb-[5px]">
+            <i class="fa-solid fa-bell-concierge"></i>
+        </div>
+
+        <h1 class="text-[24px] sm:text-[28px] md:text-[31px] lg:text-[45px] tracking-[1px] sm:tracking-[2px] lg:tracking-[3px] font-bold [text-shadow:0_3px_5px_black]">
+            BOCADOAPP
+        </h1>
+
+        <div class="linea w-[180px] sm:w-[250px] md:w-[240px] lg:w-[330px] h-[2px] mx-auto my-[6px] sm:my-[10px] mb-[12px] sm:mb-[20px] bg-[linear-gradient(to_right,transparent,#e9b63f,transparent)]"></div>
+
+        <h2 class="text-[20px] sm:text-[23px] md:text-[22px] lg:text-[30px] mb-[12px] sm:mb-[20px] font-semibold">
+            Perfiles
+        </h2>
+
+        <!-- PERFILES -->
+        <div class="perfiles flex flex-col sm:flex-row gap-[10px] lg:gap-[15px] mb-[12px] sm:mb-[25px]">
+
+            <div class="perfil activo w-full sm:w-[50%] py-[14px] sm:py-[15px] md:py-[10px] lg:py-[18px] px-4 border border-[#555] rounded-[12px] cursor-pointer text-[14px] sm:text-[16px] md:text-[14px] lg:text-[19px] flex items-center justify-center gap-[8px] lg:gap-[12px] transition duration-300 hover:border-[#e9b63f] hover:-translate-y-[2px] [&.activo]:border-2 [&.activo]:border-[#e9b63f] [&.activo]:text-[#e9b63f] [&.activo]:shadow-[0_5px_15px_rgba(233,182,63,0.25)]" id="propietario">
+                <i class="fa-solid fa-user text-[19px] lg:text-[24px]"></i>
+                <span>Propietario</span>
+            </div>
+
+            <div class="perfil w-full sm:w-[50%] py-[14px] sm:py-[15px] md:py-[10px] lg:py-[18px] px-4 border border-[#555] rounded-[12px] cursor-pointer text-[14px] sm:text-[16px] md:text-[14px] lg:text-[19px] flex items-center justify-center gap-[8px] lg:gap-[12px] transition duration-300 hover:border-[#e9b63f] hover:-translate-y-[2px] [&.activo]:border-2 [&.activo]:border-[#e9b63f] [&.activo]:text-[#e9b63f] [&.activo]:shadow-[0_5px_15px_rgba(233,182,63,0.25)]" id="empleados">
+                <i class="fa-solid fa-users text-[19px] lg:text-[24px]"></i>
+                <span>Empleados</span>
+            </div>
+
+        </div>
+
+        <!-- DESCRIPCIÓN -->
+        <p id="descripcion" class="leading-[1.5] sm:leading-[1.6] text-[13px] sm:text-[14px] md:text-[13px] lg:text-[17px] my-[12px] sm:my-[15px] md:my-[12px] lg:my-[20px] mx-[5px] lg:mx-[10px] mb-[20px] lg:mb-[25px] text-[#eeeeee]">
+            Esta opción de inicio de sesión es exclusiva para los propietarios
+            de restaurantes que desean monitorear y tener acceso a todas las
+            funciones administrativas del negocio.
+        </p>
+
+        <!-- FORMULARIO -->
+
+        <div class="input-box w-full h-[46px] sm:h-[52px] md:h-[46px] lg:h-[60px] border border-[#777] rounded-[12px] mb-[10px] lg:mb-[17px] flex items-center px-[15px] lg:px-[20px] transition duration-300 bg-[rgba(0,0,0,0.20)] focus-within:border-[#e9b63f] focus-within:shadow-[0_0_8px_rgba(233,182,63,0.35)]">
+            <i class="fa-regular fa-user text-[#e9b63f] text-[17px] lg:text-[20px] mr-[12px] lg:mr-[15px]"></i>
+            <input type="text" id="usuario" placeholder="Usuario" class="w-full border-none outline-none bg-transparent text-white text-[14px] lg:text-[17px] placeholder-[#bbbbbb]">
+        </div>
+
+        <!-- Opcional si usas usuario2 en JS -->
+        <div class="input-box w-full h-[46px] sm:h-[52px] md:h-[46px] lg:h-[60px] border border-[#777] rounded-[12px] mb-[10px] lg:mb-[17px] items-center px-[15px] lg:px-[20px] transition duration-300 bg-[rgba(0,0,0,0.20)] focus-within:border-[#e9b63f] focus-within:shadow-[0_0_8px_rgba(233,182,63,0.35)]" id="usuario2-container" style="display: none;">
+            <i class="fa-regular fa-user text-[#e9b63f] text-[17px] lg:text-[20px] mr-[12px] lg:mr-[15px]"></i>
+            <input type="text" id="usuario2" placeholder="Usuario Empleado" class="w-full border-none outline-none bg-transparent text-white text-[14px] lg:text-[17px] placeholder-[#bbbbbb]">
+        </div>
+
+        <div class="input-box w-full h-[46px] sm:h-[52px] md:h-[46px] lg:h-[60px] border border-[#777] rounded-[12px] mb-[10px] lg:mb-[17px] flex items-center px-[15px] lg:px-[20px] transition duration-300 bg-[rgba(0,0,0,0.20)] focus-within:border-[#e9b63f] focus-within:shadow-[0_0_8px_rgba(233,182,63,0.35)]">
+            <i class="fa-solid fa-lock text-[#e9b63f] text-[17px] lg:text-[20px] mr-[12px] lg:mr-[15px]"></i>
+            <input type="password" id="password" placeholder="Contraseña" class="w-full border-none outline-none bg-transparent text-white text-[14px] lg:text-[17px] placeholder-[#bbbbbb]">
+            <i class="fa-regular fa-eye ojo text-[#cccccc] cursor-pointer m-0 ml-2" id="verPassword"></i>
+        </div>
+
+        <!-- Opcional si usas password2 en JS -->
+        <div class="input-box w-full h-[46px] sm:h-[52px] md:h-[46px] lg:h-[60px] border border-[#777] rounded-[12px] mb-[10px] lg:mb-[17px] items-center px-[15px] lg:px-[20px] transition duration-300 bg-[rgba(0,0,0,0.20)] focus-within:border-[#e9b63f] focus-within:shadow-[0_0_8px_rgba(233,182,63,0.35)]" id="password2-container" style="display: none;">
+            <i class="fa-solid fa-lock text-[#e9b63f] text-[17px] lg:text-[20px] mr-[12px] lg:mr-[15px]"></i>
+            <input type="password" id="password2" placeholder="Contraseña Empleado" class="w-full border-none outline-none bg-transparent text-white text-[14px] lg:text-[17px] placeholder-[#bbbbbb]">
+            <i class="fa-regular fa-eye ojo text-[#cccccc] cursor-pointer m-0 ml-2" id="verPassword2"></i>
+        </div>
+
+        <p id="error" class="text-[#ff5757] text-[14px] mb-[10px]"></p>
+
+        <a href="#" class="olvidaste block text-[#e9b63f] no-underline text-[13px] sm:text-[14px] lg:text-[17px] my-[12px] lg:my-[25px] hover:underline" id="olvidaste">
+            ¿Olvidaste tu contraseña?
+        </a>
+
+        <a href="#" class="olvidaste block text-[#e9b63f] no-underline text-[13px] sm:text-[14px] lg:text-[17px] my-[12px] lg:my-[25px] hover:underline" id="olvidaste2" style="display: none;">
+            ¿Olvidaste tu contraseña de empleado?
+        </a>
+
+        <!-- BOTONES -->
+
+        <div class="botones flex flex-col sm:flex-row gap-[15px]">
+
+            <button type="submit" class="btn-login w-full sm:w-[50%] h-[46px] sm:h-[52px] lg:h-[60px] rounded-[12px] text-[15px] sm:text-[16px] lg:text-[18px] font-bold cursor-pointer transition duration-300 border-none bg-[linear-gradient(135deg,#ffd66b,#d99d1d)] text-[#111] shadow-[0_8px_20px_rgba(233,182,63,0.30)] mx-auto block hover:-translate-y-[3px] hover:shadow-[0_12px_25px_rgba(233,182,63,0.45)]" id="btnLogin">
+                <i class="fa-solid fa-arrow-right-to-bracket mr-2"></i>
+                Iniciar sesión
+            </button>
+
+            <button type="button" class="btn-login2 w-full sm:w-[50%] h-[46px] sm:h-[52px] lg:h-[60px] rounded-[12px] text-[15px] sm:text-[16px] lg:text-[18px] font-bold cursor-pointer transition duration-300 border-none bg-[linear-gradient(135deg,#ffd66b,#d99d1d)] text-[#111] shadow-[0_8px_20px_rgba(233,182,63,0.30)] mx-auto hidden hover:-translate-y-[3px] hover:shadow-[0_12px_25px_rgba(233,182,63,0.45)]" id="btnlogin2">
+                <i class="fa-solid fa-arrow-right-to-bracket mr-2"></i>
+                Iniciar sesión
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="inicio.js"></script>
+
+</body>
+
+</html>

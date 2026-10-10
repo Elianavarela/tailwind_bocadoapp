@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Registro - BOCADOAPP</title>
+</head>
+
+<body class="min-h-screen bg-[linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.50)),url('/img/fondo.jpeg')] bg-cover bg-center bg-no-repeat flex justify-center items-center font-sans p-4 sm:p-5 md:p-6 max-sm:items-start max-sm:pt-5">
+
+    <form class="registro w-full max-w-[350px] sm:max-w-[420px] md:max-w-[500px] lg:max-w-[600px] py-[25px] px-[20px] sm:px-[35px] md:px-[45px] lg:px-[60px] bg-[#0f0f0f]/80 backdrop-blur-[12px] border border-white/25 rounded-[20px] sm:rounded-[30px] shadow-[0_20px_50px_rgba(0,0,0,0.60)] text-white text-center" id="registro">
+
+        <!-- LOGO -->
+        <div class="logo text-[#e9b63f] text-[42px] sm:text-[48px] lg:text-[55px] mb-[5px]">
+            <i class="fa-solid fa-bell-concierge"></i>
+        </div>
+
+        <!-- TÍTULO -->
+        <h1 class="text-[28px] sm:text-[36px] lg:text-[42px] tracking-[1px] sm:tracking-[3px] font-bold [text-shadow:0_3px_5px_black]">
+            BOCADOAPP
+        </h1>
+
+        <!-- LÍNEA DECORATIVA -->
+        <div class="linea w-[180px] sm:w-[250px] md:w-[280px] lg:w-[330px] h-[2px] mx-auto my-[10px] mb-[20px] bg-[linear-gradient(to_right,transparent,#e9b63f,transparent)]"></div>
+
+        <!-- SUBTÍTULO -->
+        <h2 class="text-[20px] sm:text-[26px] md:text-[25px] lg:text-[30px] mb-[10px] font-semibold">
+            Registro
+        </h2>
+
+        <p class="texto text-[#cccccc] mb-[20px] sm:mb-[25px] text-[13px] sm:text-[15px] lg:text-[16px]">
+            Registra nuevo empleado a la plataforma
+        </p>
+
+        <!-- NOMBRE -->
+        <div class="input-box w-full h-[52px] sm:h-[55px] lg:h-[58px] mb-[14px] sm:mb-[16px] border border-[#666] rounded-[12px] bg-black/25 flex items-center px-[15px] sm:px-[18px] transition duration-300 focus-within:border-[#e9b63f] focus-within:shadow-[0_0_10px_rgba(233,182,63,0.30)]">
+            <i class="fa-regular fa-user text-[#e9b63f] text-[18px] sm:text-[19px] mr-[15px]"></i>
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Nombre Completo"
+                class="w-full border-none outline-none bg-transparent text-white text-[14px] sm:text-[15px] lg:text-[16px] placeholder-[#bbbbbb]">
+        </div>
+
+        <!-- CORREO -->
+        <div class="input-box w-full h-[52px] sm:h-[55px] lg:h-[58px] mb-[14px] sm:mb-[16px] border border-[#666] rounded-[12px] bg-black/25 flex items-center px-[15px] sm:px-[18px] transition duration-300 focus-within:border-[#e9b63f] focus-within:shadow-[0_0_10px_rgba(233,182,63,0.30)]">
+            <i class="fa-regular fa-envelope text-[#e9b63f] text-[18px] sm:text-[19px] mr-[15px]"></i>
+            <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="Correo Electrónico"
+                class="w-full border-none outline-none bg-transparent text-white text-[14px] sm:text-[15px] lg:text-[16px] placeholder-[#bbbbbb]">
+        </div>
+
+        <!-- CONTRASEÑA -->
+        <div class="input-box w-full h-[52px] sm:h-[55px] lg:h-[58px] mb-[14px] sm:mb-[16px] border border-[#666] rounded-[12px] bg-black/25 flex items-center px-[15px] sm:px-[18px] transition duration-300 focus-within:border-[#e9b63f] focus-within:shadow-[0_0_10px_rgba(233,182,63,0.30)]">
+            <i class="fa-solid fa-lock text-[#e9b63f] text-[18px] sm:text-[19px] mr-[15px]"></i>
+            <input
+                type="password"
+                id="contrasena"
+                name="contrasena"
+                placeholder="Contraseña"
+                class="w-full border-none outline-none bg-transparent text-white text-[14px] sm:text-[15px] lg:text-[16px] placeholder-[#bbbbbb]">
+            <i class="fa-regular fa-eye ojo text-[#cccccc] m-0 cursor-pointer ml-2" id="verPassword"></i>
+        </div>
+
+        <!-- REPETIR CONTRASEÑA -->
+        <div class="input-box w-full h-[52px] sm:h-[55px] lg:h-[58px] mb-[14px] sm:mb-[16px] border border-[#666] rounded-[12px] bg-black/25 flex items-center px-[15px] sm:px-[18px] transition duration-300 focus-within:border-[#e9b63f] focus-within:shadow-[0_0_10px_rgba(233,182,63,0.30)]">
+            <i class="fa-solid fa-lock text-[#e9b63f] text-[18px] sm:text-[19px] mr-[15px]"></i>
+            <input
+                type="password"
+                id="repetirPassword"
+                placeholder="Repetir Contraseña"
+                class="w-full border-none outline-none bg-transparent text-white text-[14px] sm:text-[15px] lg:text-[16px] placeholder-[#bbbbbb]">
+            <i class="fa-regular fa-eye ojo text-[#cccccc] m-0 cursor-pointer ml-2" id="verRepetirPassword"></i>
+        </div>
+
+        <!-- SELECTOR DE ROL -->
+        <div class="input-box w-full h-[52px] sm:h-[55px] lg:h-[58px] mb-[14px] sm:mb-[16px] border border-[#666] rounded-[12px] bg-black/25 flex items-center px-[15px] sm:px-[18px] transition duration-300 focus-within:border-[#e9b63f] focus-within:shadow-[0_0_10px_rgba(233,182,63,0.30)]">
+            <i class="fa-solid fa-lock text-[#e9b63f] text-[18px] sm:text-[19px] mr-[15px]"></i>
+            <select name="rol" id="rol" required class="w-full border-none outline-none bg-transparent text-white text-[14px] sm:text-[15px] lg:text-[16px] cursor-pointer">
+                <option value="" disabled selected hidden class="text-black">selecciona un rol</option>
+                <option value="1" class="text-black">administrador</option>
+                <option value="2" class="text-black">mesero</option>
+                <option value="3" class="text-black">cocinero</option>
+            </select>
+        </div>
+
+        <!-- MENSAJE DE ERROR -->
+        <p id="error" class="text-[#ff5757] text-[14px] mb-[10px]"></p>
+
+        <!-- BOTÓN REGISTRAR -->
+        <button type="submit" class="btn-registro w-full h-[52px] sm:h-[55px] lg:h-[58px] border-none rounded-[12px] mt-[20px] bg-[linear-gradient(135deg,#ffd66b,#d99d1d)] text-[#111] text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] font-bold cursor-pointer transition duration-300 hover:-translate-y-[3px] hover:shadow-[0_10px_25px_rgba(233,182,63,0.40)]" id="btnRegistro">
+            <i class="fa-solid fa-user-plus mr-2"></i> Registrar
+        </button>
+
+        <!-- BOTÓN VOLVER -->
+        <button type="button" class="btn-login w-full h-[50px] sm:h-[52px] lg:h-[55px] mt-[15px] rounded-[12px] border-2 border-[#e9b63f] bg-transparent text-[#e9b63f] text-[14px] sm:text-[15px] font-bold cursor-pointer transition duration-300 hover:bg-[#e9b63f] hover:text-[#111]" id="btnVolver">
+            Volver
+        </button>
+
+    </form>
+
+    <!-- Script de lógica que ya tenías preparado -->
+    <script src="registro.js"></script>
+
+</body>
+
+</html>

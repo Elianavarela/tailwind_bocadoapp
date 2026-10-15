@@ -3,6 +3,7 @@ const empleados = document.getElementById("empleados");
 
 const btnlogin2 = document.getElementById("btnlogin2");
 const btnLogin = document.getElementById("btnLogin");
+const btnVolver = document.getElementById("1");
 
 const descripcion = document.getElementById("descripcion");
 const error = document.getElementById("error");
@@ -121,5 +122,10 @@ btnLogin.addEventListener("click", async () => {
 });
 btnlogin2.addEventListener("click", ()=>{
     window.location.replace("/nn.html")
+})
+
+btnVolver.addEventListener("click", () => {
+
+    window.location.replace("/index.html");
 })
 

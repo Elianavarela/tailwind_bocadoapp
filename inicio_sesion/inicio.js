@@ -126,6 +126,6 @@ btnlogin2.addEventListener("click", ()=>{
 
 btnVolver.addEventListener("click", () => {
 
-    window.location.replace("/index.html");
+    window.location.replace("../index.html");
 })
 

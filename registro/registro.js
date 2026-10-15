@@ -63,7 +63,7 @@ verRepetirPassword.addEventListener("click", () => {
 // BOTÓN VOLVER
 btnVolver.addEventListener("click", () => {
 
-    window.location.replace("/index.html");
+    window.location.replace("../index.html");
 
 });
 
